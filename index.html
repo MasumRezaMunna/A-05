@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Hotline</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <nav>
-        
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="px-14 py-4 flex justify-between">
+      <div id="left-nav-parent" class="flex gap-3">
+        <div>
+          <img class="w-[50px] h-{50px}" src="./assets/logo.png" alt="" />
+        </div>
+        <div class="justify-center items-center">
+          <h1 class="justify-center items-center text-[#006747] font-bold">
+            Emergency <br />
+            Service
+          </h1>
+        </div>
+      </div>
+      <div id="right-nav-parent" class="flex gap-3">
+        <div class="bg-[#41ff6b1a] p-3 rounded-2xl font-bold">
+          <span>0</span><i class="fa-solid fa-heart text-red-500"></i>
+        </div>
+        <div class="bg-[#41ff6b1a] p-3 rounded-2xl font-bold"><span>0</span><i class="fa-solid fa-circle-plus text-yellow-400"></i></i></div>
+        <div class="bg-[#00a63e] p-3 rounded-2xl text-white font-bold"><span>0</span> Copy</div>
+      </div>
     </nav>
-    <section>
-
+    <section id="emergency-service-directory" class="bg-[linear-gradient(to_right,rgba(1,50,35,1),rgba(0,103,71,1),rgba(1,50,35,1))]  text-center px-14 py-3">
+        <img class="w-4/92 mx-auto " src="./assets/logo-dark.png" alt="">
+        <h1 class="text-white font-bold text-2xl">Emergency Service Directory</h1>
+        <p class="text-white text-sm">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </section>
-    <section>
-        
-    </section>
-</body>
+    <section></section>
+  </body>
 </html>
