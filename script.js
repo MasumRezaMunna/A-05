@@ -16,12 +16,12 @@ const clearBtn = document.getElementById("clear-btn");
 
 for (let btn of callBtn) {
   btn.addEventListener("click", function () {
+      coin -= 20;
       if (coin < 0) {
           alert("❌ you don't have enough coin. you need 20 coin to call");
           return;
         }
         
-    coin -= 20;
     coinCount.innerText = coin;
 
     const card = btn.closest("div#card");
