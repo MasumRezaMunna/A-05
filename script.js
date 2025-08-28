@@ -54,6 +54,13 @@ for (let btn of callBtn) {
 
 for (let btnC of copyBtn) {
   btnC.addEventListener("click", function () {
+    const card = btnC.closest("div#card");
+    const number = card.querySelector(".number").innerText;
+
+    navigator.clipboard.writeText(number).then(() => {
+        
+        alert(`number is copied : ${number}`)
+    })
     copy += 1;
     copyCount.innerText = copy;
   });
